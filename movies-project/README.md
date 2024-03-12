@@ -1,4 +1,5 @@
 # React + Vite
+Projeto de Filmes para demonstrar meus conhecimentos de React com Javascript.
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
