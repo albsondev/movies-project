@@ -1,7 +1,7 @@
 const Movie = () => {
     return (
         <div>
-            Movie
+            Movie: 1
         </div>
     )
 };
