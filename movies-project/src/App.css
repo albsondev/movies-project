@@ -1,0 +1,14 @@
+.botaoEstilizado {
+    position: absolute;
+    transform: translate(-47%, -4%);
+    background-color: #dc3545;
+    color: #fff;
+    font-size: 1.1rem;
+    height: 38px;
+    width: 25px;
+    padding: 2px;
+    padding-left: 4px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top: 3px solid #9d0010;
+}
