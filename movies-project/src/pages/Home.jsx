@@ -21,7 +21,7 @@ const Home = () => {
     return (
         <div className={'cards-topRated'}>
             <div className={'container-fluid'}>
-                <div className="row row-cols-1 row-cols-md-6 g-4">
+                <div className="row row-cols-lg-6 row-cols-md-6 col-lg-612 g-4">
                     {topMovies && topMovies.map((movie, index) => {
                             return (
                                 <div className={'col'}>
