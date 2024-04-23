@@ -19,19 +19,30 @@ const Home = () => {
     }, []);
 
     return (
-        <div>
-            <h1>Home</h1>
-            {topMovies && topMovies.map((movie, index) => {
-                    return (
-                        <div key={index}>
-                            <h2>{movie.title}</h2>
-                            <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title}/>
-                            <p>{movie.overview}</p>
-                        </div>
-                    )
-                }
-            )}
-            <Toast title={"Novidade!"} message={"Oi, eu sou um lembrete!"} timer={'2 minutos atrás'}/>
+        <div className={'cards-topRated'}>
+            <div className={'container-fluid'}>
+                <div className="row row-cols-1 row-cols-md-6 g-4">
+                    {topMovies && topMovies.map((movie, index) => {
+                            return (
+                                <div className={'col'}>
+                                    <div className="card" key={index}>
+                                        <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt={movie.title}
+                                             className="card-img-top"/>
+                                        <div className="card-body">
+                                            <h5 className="card-title">{movie.title}</h5>
+                                            <p className="card-text truncate-text">{movie.overview}</p>
+                                        </div>
+                                        <div className="card-footer">
+                                            <small className="text-body-secondary">Last updated 3 mins ago</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        }
+                    )}
+                </div>
+                <Toast title={"Novidade!"} message={"Oi, eu sou um lembrete!"} timer={'2 minutos atrás'}/>
+            </div>
         </div>
     );
 }
